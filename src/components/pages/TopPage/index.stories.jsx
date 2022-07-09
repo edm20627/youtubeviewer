@@ -4,5 +4,3 @@ import TopPage from '.';
 export default { title: 'pages/TopPage' };
 
 export const topPage = () => <TopPage />;
-// 名前設定
-topPage.story = { name: 'トップページ' };

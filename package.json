@@ -10,7 +10,9 @@
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -s ./.storybook/static -p 6006",
-    "build-storybook": "build-storybook -s ./.storybook/static"
+    "build-storybook": "build-storybook -s ./.storybook/static",
+    "eslint": "eslint './**/*.{js,jsx}'",
+    "eslint:fix": "npm run eslint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -49,6 +51,13 @@
     "@storybook/addon-links": "^6.5.9",
     "@storybook/addons": "^6.5.9",
     "@storybook/react": "^6.5.9",
-    "babel-plugin-styled-components": "^1.10.7"
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1"
   }
 }

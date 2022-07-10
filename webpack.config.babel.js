@@ -1,5 +1,5 @@
-import webpack from 'webpack';
 import path from 'path';
+import { IgnorePlugin } from 'webpack';
 
 export default (env, args) => {
   const isProduction = args.mode === 'production';
@@ -26,5 +26,9 @@ export default (env, args) => {
       },
       extensions: ['.js', '.jsx'],
     },
+    plugins: [
+      // Ignore all locale files of moment.js
+      new IgnorePlugin(/^\.\/locale$/, /moment$/),
+    ],
   };
 };

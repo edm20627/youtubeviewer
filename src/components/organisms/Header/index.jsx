@@ -1,10 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import NavigationLinks from '~/components/organisms/NavigationLinks';
 import Typography from '~/components/atoms/Typography';
 
 const Root = styled.div`
   width: 100%;
+  display: flex;
+`;
+
+const StyledNavigationLinks = styled(NavigationLinks)`
+  margin-left: auto;
 `;
 
 const Header = ({ className }) => (
@@ -12,6 +18,7 @@ const Header = ({ className }) => (
     <Typography size="title" color="red" align="center">
       YouTube Viewer
     </Typography>
+    <StyledNavigationLinks />
   </Root>
 );
 
